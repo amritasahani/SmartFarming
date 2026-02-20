@@ -1,25 +1,92 @@
 # Smart Agriculture Advisory Platform
 
-A complete MERN stack web application for smart agriculture, serving as an advisory dashboard for farmers. Features include crop recommendations, weather forecasting, market prices tracking, and an AI chat assistant.
+A full-stack Smart Agriculture web application that helps farmers make data-driven decisions using weather data, crop recommendations, market trends, and cloud-based services.
 
-## Tech Stack
-- **Database:** MongoDB
-- **Backend:** Node.js, Express.js (REST API)
-- **Frontend:** React.js, Vite, Context API
-- **Styling:** Custom CSS (Modern, Glassmorphism design)
-- **Authentication:** JWT (JSON Web Tokens)
+🗄️ Technology Stack
+🔹 Frontend
+
+React.js
+
+Vite
+
+Context API
+
+Custom CSS (Glassmorphism UI)
+
+🔹 Backend
+
+Node.js
+
+Express.js (REST API)
+
+JWT Authentication
+
+🔹 Database
+
+MongoDB
+
+🔹 Cloud Services (AWS)
+
+AWS Lambda (Serverless Functions)
+
+AWS API Gateway (API Management)
+
+AWS IAM (Access Management)
+
+AWS Cloud Services Integration
+
+🔹 External APIs
+
+OpenWeather API (Weather Forecast Data)
 
 ## Project Structure
-- `/backend`: Express.js server, MongoDB Models, Controllers, and Routes.
-- `/frontend`: React application created with Vite.
+SmartFarming/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   └── vite.config.js
+│
+├── aws/
+│   └── lambda-functions/
+│
+└── README.md
+🚀 Features
 
-## Features
-1. **User Authentication:** Secure signup and login for farmers.
-2. **Dashboard:** Daily snapshot of local weather and top market prices.
-3. **Crop Recommendation:** Predicts best crops based on soil nutrients (N, P, K), pH, and weather.
-4. **Weather Forecast:** Fetches current and upcoming weather for any location.
-5. **Market Prices:** Live updates on commodity pricing and trends.
-6. **AI Assistant:** 24/7 conversational bot for farming inquiries.
+User Authentication
+Secure signup and login using JWT.
+
+Dashboard
+Displays daily weather and market prices.
+
+Crop Recommendation System
+Suggests best crops based on:
+
+Soil nutrients (N, P, K)
+
+pH value
+
+Weather data
+
+Weather Forecast
+Provides real-time and 7-day weather forecast.
+
+Market Prices
+Shows live agricultural commodity prices.
+
+AI Assistant
+24/7 chatbot for farmer support.
+
+Cloud-Based Auto Detection
+Uses AWS Lambda to analyze environment data.
 
 ## Environment Setup
 You'll need `Node.js` installed and MongoDB running locally (or remote URI).
